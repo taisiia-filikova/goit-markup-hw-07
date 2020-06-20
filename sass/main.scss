@@ -1,2 +1,14 @@
+@import "./utils/variables";
+@import "./utils/tagsettings";
+@import "./utils/container";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
 
+// Header
+@import "./components/header";
+@import "./components/header-navigation";
+@import "./components/logo";
+@import "./components/header.contacts";
 
+// Hero
+@import "./components/hero";

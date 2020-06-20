@@ -1,0 +1,18 @@
+%mainButton {
+  display: inline-block;
+  width: 200px;
+
+  border-radius: 4px;
+  border: none;
+
+  text-align: center;
+
+  color: $primaryWhiteColor;
+  background-color: $accentColor;
+}
+
+%centredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
