@@ -1,0 +1,118 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: center;
+}
+.works .item:hover,
+.works .item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.works .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+  min-width: 370px;
+}
+
+.works .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.works .project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  opacity: 0;
+  transform: translateY(+100%);
+  transition: transform 250ms var(--timing-function),
+    opacity 250ms var(--timing-function);
+}
+
+.thumb:hover .project::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.works img {
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.about-work {
+  width: 370px;
+  padding: 20px 24px;
+
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  background-color: var(--primary-white-color);
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.type {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.thumb {
+  position: relative;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  color: var(--primary-white-color);
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  opacity: 0;
+  transform: translateY(+100%);
+  transition: transform 250ms var(--timing-function) 250ms,
+    opacity 250ms var(--timing-function) 250ms;
+}
+
+.thumb:hover .description,
+.thumb:focus .description {
+  opacity: 1;
+  transform: translateY(0);
+}
