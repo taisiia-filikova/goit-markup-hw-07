@@ -35,6 +35,15 @@ section {
   padding-right: 15px;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,6 +69,18 @@ section {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.advantages .background, .team-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -228,5 +249,206 @@ section {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+}
+
+.advantages .item + .item {
+  margin-left: 30px;
+}
+
+.advantages .background {
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  min-width: 270px;
+  min-height: 120px;
+}
+
+.advantages .img {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.advantages .title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages .title-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.activity .item {
+  position: relative;
+}
+
+.activity .item + .item {
+  margin-left: 30px;
+}
+
+.activity img {
+  display: block;
+  border-radius: 4px;
+  min-width: 370px;
+}
+
+.activity-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 27px 0;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team-container {
+  background-color: #f5f4fa;
+}
+
+.team {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.people .item {
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.people .item + .item {
+  margin-left: 30px;
+}
+
+.face {
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  min-width: 270px;
+}
+
+.about-person {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+  background-color: var(--primary-white-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.about-person .name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.about-person .profession {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about-person .social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 207px;
+  height: 44px;
+}
+
+.social-network .item {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.social-network .item:hover .team-icon,
+.social-network .item:focus .team-icon {
+  fill: #ffffff;
+}
+
+.social-network .item + .item {
+  margin-left: 10px;
+}
+
+.team-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover, .team-link:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.team-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
