@@ -8,28 +8,28 @@
   padding: 0;
   margin: 0;
   margin-left: 80px;
+}
 
-  &.item + .item {
-    margin-left: 50px;
-  }
+.navigation .item + .item {
+  margin-left: 50px;
+}
 
-  &.link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+.navigation .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    color: $titleTextColor;
+  color: $titleTextColor;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    transition: color $duration $timingFunction;
+  transition: color $duration $timingFunction;
 
-    &:hover,
-    &:focus {
-      color: $accentColor;
-    }
+  &:hover,
+  &:focus {
+    color: $accentColor;
   }
 }
 

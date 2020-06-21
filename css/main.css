@@ -48,10 +48,16 @@ section {
 
 .button {
   display: inline-block;
-  width: 200px;
+  min-height: 50px;
+  min-width: 200px;
+  padding: 10px 32px;
   border-radius: 4px;
   border: none;
   text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -87,11 +93,11 @@ section {
   margin-left: 80px;
 }
 
-.navigation.item + .item {
+.navigation .item + .item {
   margin-left: 50px;
 }
 
-.navigation.link {
+.navigation .link {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
@@ -103,7 +109,7 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation.link:hover, .navigation.link:focus {
+.navigation .link:hover, .navigation .link:focus {
   color: #2196f3;
 }
 
@@ -149,11 +155,11 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts.item + .item {
+.header-contacts .item + .item {
   margin-left: 30px;
 }
 
-.header-contacts.link {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,9 +168,6 @@ section {
           align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.contacts {
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -180,13 +183,13 @@ section {
   --color4: $accentColor;
 }
 
-.contacts.cover {
+.cover {
   width: 16px;
   height: 11px;
   margin-right: 10px;
 }
 
-.contacts.phone {
+.phone {
   width: 10px;
   height: 15px;
   margin-right: 10px;
