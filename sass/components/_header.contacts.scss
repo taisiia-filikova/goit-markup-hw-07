@@ -1,9 +1,7 @@
 .header-contacts {
-  display: flex;
+  @extend %flex;
   align-items: baseline;
 
-  margin: 0;
-  padding: 0;
   margin-left: auto;
 
   transition: color $duration $timingFunction;

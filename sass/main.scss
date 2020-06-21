@@ -1,7 +1,9 @@
 @import "./utils/variables";
 @import "./utils/tagsettings";
 @import "./utils/container";
+@import "./utils/section";
 @import "./utils/section-title";
+@import "./utils/footer-title";
 @import "./utils/visually-hidden";
 @import "./utils/placeholders";
 
@@ -22,3 +24,12 @@
 
 // Team
 @import "./components/team";
+
+// Customers
+@import "./components/customers";
+
+// Footer
+@import "./components/footer";
+@import "./components/footer-contacts";
+@import "./components/footer-follow-us";
+@import "./components/footer-subscribe";

@@ -1,7 +1,5 @@
 .activity {
-  display: flex;
-  padding: 0;
-  margin: 0;
+  @extend %flex;
 }
 
 .activity .item {

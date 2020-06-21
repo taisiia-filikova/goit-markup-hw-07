@@ -4,9 +4,7 @@
 }
 
 .navigation {
-  display: flex;
-  padding: 0;
-  margin: 0;
+  @extend %flex;
   margin-left: 80px;
 }
 

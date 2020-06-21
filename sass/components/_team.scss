@@ -18,9 +18,7 @@
 }
 
 .people {
-  display: flex;
-  padding: 0;
-  margin-top: 0;
+  @extend %flex;
   margin-bottom: 0;
 }
 
@@ -69,11 +67,12 @@
   }
 
   .social-network {
-    display: flex;
+    @extend %flex;
     justify-content: center;
-    padding: 0;
+
     margin-left: auto;
     margin-right: auto;
+
     width: 207px;
     height: 44px;
   }
