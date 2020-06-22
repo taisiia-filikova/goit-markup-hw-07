@@ -527,6 +527,8 @@ footer a {
 }
 
 .logo-footer {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   line-height: 1.63;
 }

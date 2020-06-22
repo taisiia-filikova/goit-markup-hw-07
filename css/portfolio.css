@@ -76,7 +76,7 @@ section {
   cursor: pointer;
 }
 
-.navigation, .header-contacts, .works, .social-networks, .footer-form {
+.navigation, .header-contacts, .social-networks, .footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,6 +263,9 @@ section {
 }
 
 .works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -411,6 +414,8 @@ footer a {
 }
 
 .logo-footer {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   line-height: 1.63;
 }
